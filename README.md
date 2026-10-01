@@ -1,5 +1,6 @@
 So, I don't own anything in this mod; I just re-edited the updated version from moxg and the original owner, yanvaa.
 Here's what I've done. I may not update the mod further, so if you encounter any issues or need help, I may not be able to assist.
+
 Moon Info Re-Edited 1.0.0
 - Correct the moon's waning and waxing sides; now it will appear more correctly according to Minecraft World and Wiki, not the real-world moon.
 - Add Key Bind option to show and hide the HUD
