@@ -2,15 +2,17 @@
 	"schemaVersion": 1,
 	"id": "moonphaseu",
 	"version": "${version}",
-	"name": "Moon Phase Updated",
-	"description": "Minecraft mod to display information about the state of the moon.\nModified MoonPhaseInfo \nUpdated to 1.21.1",
+	"name": "Moon Phase Re-edited",
+	"description": "Minecraft mod to display information about the state of the moon.\nModified MoonPhaseInfoUpdated\nRe-edited to add more settings and Mod Menu compatibility",
 	"authors": [
-		"Yanva",
-		"moxg"
+		"Yanvaa",
+		"moxg",
+		"qmel",
+		"ViruziA"
 	],
-	"license": "MIT",
+	"license": "CC0-1.0",
 	"icon": "assets/moonphaseu/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"com.moxg.moonphaseu.MoonPhaseUpdated"
