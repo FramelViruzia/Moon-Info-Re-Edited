@@ -21,7 +21,7 @@ public class MoonPhaseConfigScreen {
 
         ConfigBuilder builder = ConfigBuilder.create()
                 .setParentScreen(parent)
-                .setTitle(Text.literal("Moon-Info-Re-Edited"))
+                .setTitle(Text.literal("Moon Info Re-Edited"))
                 .setSavingRunnable(() -> {
                     try {
                         cfg.save();
