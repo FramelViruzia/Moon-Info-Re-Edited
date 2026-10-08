@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "mooninfo-re-edited",
+	"version": "${version}",
+	"name": "Moon Phase Updated",
+	"description": "Minecraft mod to display information about the state of the moon.\nModified MoonPhaseInfo \nUpdated to 1.21.1",
+	"authors": [
+		"Yanva",
+		"moxg"
+	],
+	"license": "MIT",
+	"icon": "assets/mooninfo-re-edited/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.moxg.moonphaseu.MoonPhaseUpdated"
+		],
+		"modmenu": [
+			"com.moxg.moonphaseu.ModMenuIntegration"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*",
+		"cloth-config": "*"
+	}
+}
