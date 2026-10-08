@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "mooninfo-re-edited",
 	"version": "${version}",
-	"name": "Moon-Info-Re-Edited",
-	"description": "Minecraft mod to display information about the phase/state of the moon.\nModified Moon Info Updated 1.21.1 by moxg\nFixed moon icons and added more settings via mod menu",
+	"name": "Moon Info Re-Edited",
+	"description": "Display information about the phase/state of the moon.\nModified from Moon Info by Yanva and a 1.21.1 update version by moxg",
 	"authors": [
 		"Yanva",
 		"moxg",
