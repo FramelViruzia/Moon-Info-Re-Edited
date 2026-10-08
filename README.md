@@ -1,1 +1,1 @@
-So, I don't own anything in this mod; I just re-edited the updated version from moxg and the original owner, Yanva. I may not update the mod further, so if you encounter any issues or need help, I will help as best as I can.
+I don't own anything in this mod; I just re-edited the updated version from moxg and the original owner, Yanva. I may not update the mod further, but if you run into any issues or need help, feel free to open an issue here. I'll take a look and see if I can help.
