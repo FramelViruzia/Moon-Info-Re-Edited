@@ -1,11 +1,13 @@
 package com.moxg.moonphaseu.config;
 
-import com.moxg.moonphaseu.MoonPhaseUpdated;
+import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Properties;
 
 public class ModConfig {
@@ -18,7 +20,8 @@ public class ModConfig {
     public static final boolean DEFAULT_SHOW_TIME = true;
     public static final boolean DEFAULT_SHOW_ICON = true;
 
-    String filename;
+    // <game folder>/config/Moon-Info-Re-Edited.properties
+    private final Path path;
     public int hudPosition = DEFAULT_POSITION;
     public boolean hudVisible = DEFAULT_HUD_VISIBLE;
     public IndicatorMode indicatorMode = DEFAULT_INDICATOR;
@@ -27,7 +30,7 @@ public class ModConfig {
     public boolean showIcon = DEFAULT_SHOW_ICON;
 
     public ModConfig() {
-        this.filename = MoonPhaseUpdated.MOD_ID + "_config.properties";
+        this.path = FabricLoader.getInstance().getConfigDir().resolve("Moon-Info-Re-Edited.properties");
     }
 
     // Writes every setting to disk.
@@ -39,7 +42,8 @@ public class ModConfig {
         props.setProperty("show_percentage", String.valueOf(showPercentage));
         props.setProperty("show_time", String.valueOf(showTime));
         props.setProperty("show_icon", String.valueOf(showIcon));
-        try (FileWriter writer = new FileWriter(this.filename)) {
+        Files.createDirectories(path.getParent());
+        try (FileWriter writer = new FileWriter(path.toFile())) {
             props.store(writer, null);
         }
     }
@@ -47,7 +51,8 @@ public class ModConfig {
     // Reads the config file. Old files that only contain "hud_position=N" still work;
     // missing keys fall back to their defaults.
     public void load() throws IOException {
-        File file = new File(this.filename);
+        Files.createDirectories(path.getParent());
+        File file = path.toFile();
         if (file.createNewFile()) {
             save();
             return;

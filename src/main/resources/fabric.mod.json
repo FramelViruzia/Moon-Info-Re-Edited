@@ -2,16 +2,15 @@
 	"schemaVersion": 1,
 	"id": "mooninfo-re-edited",
 	"version": "${version}",
-	"name": "Moon Info Re-Edited",
-	"description": "Minecraft mod to display information about the state of the moon.\nModified Moon Info Updated 1.21.1 by moxg\nFixed moon icons and added more settings via mod menu",
+	"name": "Moon-Info-Re-Edited",
+	"description": "Minecraft mod to display information about the state of the moon.\nModified MoonPhaseInfo \nUpdated to 1.21.1",
 	"authors": [
 		"Yanva",
-		"moxg",
-		"ViruziA"
+		"moxg"
 	],
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/mooninfo-re-edited/icon.png",
-	"environment": "client",
+	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.moxg.moonphaseu.MoonPhaseUpdated"
