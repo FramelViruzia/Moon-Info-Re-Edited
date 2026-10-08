@@ -30,7 +30,7 @@ public class ModConfig {
     public boolean showIcon = DEFAULT_SHOW_ICON;
 
     public ModConfig() {
-        this.path = FabricLoader.getInstance().getConfigDir().resolve("Moon-Info-Re-Edited.properties");
+        this.path = FabricLoader.getInstance().getConfigDir().resolve("moon-info-re-edited.properties");
     }
 
     // Writes every setting to disk.
